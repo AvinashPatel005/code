@@ -13,4 +13,12 @@ public class Sample {
 
     public void unused() {
     } // dead code
+
+     public void process() {
+        try {
+            int x = 10 / 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
